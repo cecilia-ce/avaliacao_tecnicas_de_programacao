@@ -114,7 +114,7 @@
                               <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="jTextField8" min="-2" pref="49" max="-2" attributes="0"/>
-                              <EmptySpace pref="21" max="32767" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                               <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="jTextField7" min="-2" pref="99" max="-2" attributes="0"/>
@@ -286,7 +286,7 @@
                                           <Group type="102" alignment="0" attributes="0">
                                               <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jTextField12" max="32767" attributes="0"/>
+                                              <Component id="jTextField12" pref="143" max="32767" attributes="0"/>
                                           </Group>
                                       </Group>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
