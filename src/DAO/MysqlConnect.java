@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class MysqlConnect {
     private static final String URL = "jdbc:mysql://localhost:3306/DBCADV";
-    private static final String USER = "rood";
+    private static final String USER = "root";
     private static final String PASS = "Admin";
     private static final String DRIVER = "com.mysql.jdbc.Driver";
 
