@@ -3,7 +3,7 @@ package Model;
 import Enum.EstadoCivil;
 
 public class Cliente {
-    private int codigo_cliente;
+
     private String nome;
     private String cpf;
     private String endereco;
@@ -12,8 +12,7 @@ public class Cliente {
     private String cep;
 
 
-    public Cliente(int codigo_cliente, String nome, String cpf, String endereco, EstadoCivil estadoCivil, String naturalidade, String cep) {
-        this.codigo_cliente = codigo_cliente;
+    public Cliente( String nome, String cpf, String endereco, EstadoCivil estadoCivil, String naturalidade, String cep) {
         this.nome = nome;
         this.cpf = cpf;
         this.endereco = endereco;
@@ -36,15 +35,6 @@ public class Cliente {
 
     public void setCep(String cep) {
         this.cep = cep;
-    }
-
-
-    public int getCodigo_cliente() {
-        return codigo_cliente;
-    }
-
-    public void setCodigo_cliente(int codigo_cliente) {
-        this.codigo_cliente = codigo_cliente;
     }
 
     public String getNome() {
@@ -81,8 +71,7 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "Cliente{" +
-                "codigo_cliente=" + codigo_cliente +
+        return "Cliente{"  +
                 ", nome='" + nome + '\'' +
                 ", cpf='" + cpf + '\'' +
                 ", endereco='" + endereco + '\'' +
