@@ -3,6 +3,8 @@ package View;/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 
+import javax.swing.*;
+
 /**
  *
  * @author Cecília
@@ -92,6 +94,8 @@ public class CadastroCliente extends javax.swing.JFrame {
                 jTextField1ActionPerformed(evt);
             }
         });
+
+
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -411,4 +415,5 @@ public class CadastroCliente extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
     // End of variables declaration//GEN-END:variables
+
 }
