@@ -92,8 +92,10 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="txtNomeCliente" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="605" max="32767" attributes="0"/>
+                      <Component id="nomeClienteDetPagamento" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="sobrenomeClienteDetPagamento" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -101,19 +103,30 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="txtNomeCliente" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="nomeClienteDetPagamento" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="sobrenomeClienteDetPagamento" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="txtNomeCliente">
+            <Component class="javax.swing.JLabel" name="nomeClienteDetPagamento">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="12" style="1"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Nome completo do cliente"/>
+                <Property name="text" type="java.lang.String" value="Nome "/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="sobrenomeClienteDetPagamento">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="12" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Sobrenome"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -141,29 +154,29 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="tipoServicoDetPagamento" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" attributes="0">
                                               <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                                              <Component id="codigoCasoDetPagamento" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="0" attributes="0">
                                               <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                                              <Component id="parcelasClienteDetPagamento" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="0" attributes="0">
                                                   <Group type="102" attributes="0">
                                                       <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace max="-2" attributes="0"/>
-                                                      <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="vencimentoDetPagamento" min="-2" max="-2" attributes="0"/>
                                                   </Group>
                                                   <Group type="102" alignment="0" attributes="0">
                                                       <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace max="-2" attributes="0"/>
-                                                      <Component id="jTextField2" min="-2" pref="141" max="-2" attributes="0"/>
+                                                      <Component id="campoDataPagamentoDetPagamento" min="-2" pref="141" max="-2" attributes="0"/>
                                                   </Group>
                                               </Group>
                                           </Group>
@@ -172,25 +185,25 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jComboBox1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="selectParcelaDetPagamento" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
                                       <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jTextField1" min="-2" pref="111" max="-2" attributes="0"/>
+                                      <Component id="campoValorPagoDetPagamento" min="-2" pref="111" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                      <Component id="honorariosClienteDetPagamento" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <EmptySpace min="0" pref="119" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              <Component id="jButton1" min="-2" pref="99" max="-2" attributes="0"/>
+                              <Component id="btnSalvarDetPagamento" min="-2" pref="99" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jButton2" min="-2" pref="99" max="-2" attributes="0"/>
+                              <Component id="btnVoltarDetPagamento" min="-2" pref="99" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
@@ -203,34 +216,34 @@
                       <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="tipoServicoDetPagamento" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="codigoCasoDetPagamento" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="vencimentoDetPagamento" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="honorariosClienteDetPagamento" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="parcelasClienteDetPagamento" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="selectParcelaDetPagamento" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="campoValorPagoDetPagamento" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="campoDataPagamentoDetPagamento" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jScrollPane1" min="-2" pref="139" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jButton2" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
-                          <Component id="jButton1" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                          <Component id="btnVoltarDetPagamento" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                          <Component id="btnSalvarDetPagamento" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
                   </Group>
@@ -243,12 +256,12 @@
                 <Property name="text" type="java.lang.String" value="Tipo do servi&#xe7;o:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel3">
+            <Component class="javax.swing.JLabel" name="tipoServicoDetPagamento">
               <Properties>
                 <Property name="text" type="java.lang.String" value="xxxxxxxxxxxx"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel4">
+            <Component class="javax.swing.JLabel" name="honorariosClienteDetPagamento">
               <Properties>
                 <Property name="text" type="java.lang.String" value="R$ 0000,00"/>
               </Properties>
@@ -258,7 +271,7 @@
                 <Property name="text" type="java.lang.String" value="Valor dos hono&#xe1;rios:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel6">
+            <Component class="javax.swing.JLabel" name="parcelasClienteDetPagamento">
               <Properties>
                 <Property name="text" type="java.lang.String" value="12x"/>
               </Properties>
@@ -268,17 +281,17 @@
                 <Property name="text" type="java.lang.String" value="Parcelas:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel8">
+            <Component class="javax.swing.JLabel" name="vencimentoDetPagamento">
               <Properties>
-                <Property name="text" type="java.lang.String" value="00/00/0000"/>
+                <Property name="text" type="java.lang.String" value="00"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel9">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Data de vencimento:"/>
+                <Property name="text" type="java.lang.String" value="Dia de vencimento:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel10">
+            <Component class="javax.swing.JLabel" name="codigoCasoDetPagamento">
               <Properties>
                 <Property name="text" type="java.lang.String" value="xxxxxxx"/>
               </Properties>
@@ -293,7 +306,7 @@
                 <Property name="text" type="java.lang.String" value="Parcela:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox1">
+            <Component class="javax.swing.JComboBox" name="selectParcelaDetPagamento">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="12">
@@ -321,20 +334,20 @@
                 <Property name="text" type="java.lang.String" value="Valor:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField1">
+            <Component class="javax.swing.JTextField" name="campoValorPagoDetPagamento">
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel14">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Data do pagamento:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField2">
+            <Component class="javax.swing.JTextField" name="campoDataPagamentoDetPagamento">
             </Component>
             <Container class="javax.swing.JScrollPane" name="jScrollPane1">
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
               <SubComponents>
-                <Component class="javax.swing.JTable" name="jTable1">
+                <Component class="javax.swing.JTable" name="tbPagamento">
                   <Properties>
                     <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                       <Table columnCount="3" rowCount="7">
@@ -369,12 +382,12 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JButton" name="jButton1">
+            <Component class="javax.swing.JButton" name="btnSalvarDetPagamento">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Salvar"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton2">
+            <Component class="javax.swing.JButton" name="btnVoltarDetPagamento">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Voltar"/>
               </Properties>

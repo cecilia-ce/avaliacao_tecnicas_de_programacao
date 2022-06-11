@@ -27,28 +27,29 @@ public class DetalhesPagamento extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        txtNomeCliente = new javax.swing.JLabel();
+        nomeClienteDetPagamento = new javax.swing.JLabel();
+        sobrenomeClienteDetPagamento = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        tipoServicoDetPagamento = new javax.swing.JLabel();
+        honorariosClienteDetPagamento = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        parcelasClienteDetPagamento = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
+        vencimentoDetPagamento = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
+        codigoCasoDetPagamento = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        selectParcelaDetPagamento = new javax.swing.JComboBox<>();
         jLabel13 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        campoValorPagoDetPagamento = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        campoDataPagamentoDetPagamento = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        tbPagamento = new javax.swing.JTable();
+        btnSalvarDetPagamento = new javax.swing.JButton();
+        btnVoltarDetPagamento = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -56,8 +57,11 @@ public class DetalhesPagamento extends javax.swing.JFrame {
 
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        txtNomeCliente.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        txtNomeCliente.setText("Nome completo do cliente");
+        nomeClienteDetPagamento.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        nomeClienteDetPagamento.setText("Nome ");
+
+        sobrenomeClienteDetPagamento.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        sobrenomeClienteDetPagamento.setText("Sobrenome");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -65,14 +69,18 @@ public class DetalhesPagamento extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(txtNomeCliente)
-                .addContainerGap(605, Short.MAX_VALUE))
+                .addComponent(nomeClienteDetPagamento)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(sobrenomeClienteDetPagamento)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(txtNomeCliente)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(nomeClienteDetPagamento)
+                    .addComponent(sobrenomeClienteDetPagamento))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -80,33 +88,33 @@ public class DetalhesPagamento extends javax.swing.JFrame {
 
         jLabel2.setText("Tipo do serviço:");
 
-        jLabel3.setText("xxxxxxxxxxxx");
+        tipoServicoDetPagamento.setText("xxxxxxxxxxxx");
 
-        jLabel4.setText("R$ 0000,00");
+        honorariosClienteDetPagamento.setText("R$ 0000,00");
 
         jLabel5.setText("Valor dos honoários:");
 
-        jLabel6.setText("12x");
+        parcelasClienteDetPagamento.setText("12x");
 
         jLabel7.setText("Parcelas:");
 
-        jLabel8.setText("00/00/0000");
+        vencimentoDetPagamento.setText("00");
 
-        jLabel9.setText("Data de vencimento:");
+        jLabel9.setText("Dia de vencimento:");
 
-        jLabel10.setText("xxxxxxx");
+        codigoCasoDetPagamento.setText("xxxxxxx");
 
         jLabel11.setText("Código do caso:");
 
         jLabel12.setText("Parcela:");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" }));
+        selectParcelaDetPagamento.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" }));
 
         jLabel13.setText("Valor:");
 
         jLabel14.setText("Data do pagamento:");
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tbPagamento.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
                 {null, null, null},
@@ -120,11 +128,11 @@ public class DetalhesPagamento extends javax.swing.JFrame {
                 "Parcela", "Valor", "Data de pagamento"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(tbPagamento);
 
-        jButton1.setText("Salvar");
+        btnSalvarDetPagamento.setText("Salvar");
 
-        jButton2.setText("Voltar");
+        btnVoltarDetPagamento.setText("Voltar");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -139,45 +147,45 @@ public class DetalhesPagamento extends javax.swing.JFrame {
                             .addGroup(jPanel3Layout.createSequentialGroup()
                                 .addComponent(jLabel2)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel3)
+                                .addComponent(tipoServicoDetPagamento)
                                 .addGap(67, 67, 67)
                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel3Layout.createSequentialGroup()
                                         .addComponent(jLabel11)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel10))
+                                        .addComponent(codigoCasoDetPagamento))
                                     .addGroup(jPanel3Layout.createSequentialGroup()
                                         .addComponent(jLabel7)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel6)
+                                        .addComponent(parcelasClienteDetPagamento)
                                         .addGap(58, 58, 58)
                                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(jPanel3Layout.createSequentialGroup()
                                                 .addComponent(jLabel9)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(jLabel8))
+                                                .addComponent(vencimentoDetPagamento))
                                             .addGroup(jPanel3Layout.createSequentialGroup()
                                                 .addComponent(jLabel14)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                                .addComponent(campoDataPagamentoDetPagamento, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                             .addGroup(jPanel3Layout.createSequentialGroup()
                                 .addComponent(jLabel12)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(selectParcelaDetPagamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(83, 83, 83)
                                 .addComponent(jLabel13)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(campoValorPagoDetPagamento, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel3Layout.createSequentialGroup()
                                 .addComponent(jLabel5)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel4)))
-                        .addGap(0, 0, Short.MAX_VALUE))
+                                .addComponent(honorariosClienteDetPagamento)))
+                        .addGap(0, 119, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnSalvarDetPagamento, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(btnVoltarDetPagamento, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
@@ -186,31 +194,31 @@ public class DetalhesPagamento extends javax.swing.JFrame {
                 .addGap(25, 25, 25)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(jLabel3)
+                    .addComponent(tipoServicoDetPagamento)
                     .addComponent(jLabel11)
-                    .addComponent(jLabel10))
+                    .addComponent(codigoCasoDetPagamento))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel9)
-                    .addComponent(jLabel8)
+                    .addComponent(vencimentoDetPagamento)
                     .addComponent(jLabel5)
-                    .addComponent(jLabel4)
+                    .addComponent(honorariosClienteDetPagamento)
                     .addComponent(jLabel7)
-                    .addComponent(jLabel6))
+                    .addComponent(parcelasClienteDetPagamento))
                 .addGap(28, 28, 28)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel12)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(selectParcelaDetPagamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel13)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(campoValorPagoDetPagamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel14)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(campoDataPagamentoDetPagamento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnVoltarDetPagamento, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnSalvarDetPagamento, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(73, 73, 73))
         );
 
@@ -291,29 +299,30 @@ public class DetalhesPagamento extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JLabel jLabel10;
+    private javax.swing.JButton btnSalvarDetPagamento;
+    private javax.swing.JButton btnVoltarDetPagamento;
+    private javax.swing.JTextField campoDataPagamentoDetPagamento;
+    private javax.swing.JTextField campoValorPagoDetPagamento;
+    private javax.swing.JLabel codigoCasoDetPagamento;
+    private javax.swing.JLabel honorariosClienteDetPagamento;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JLabel txtNomeCliente;
+    private javax.swing.JLabel nomeClienteDetPagamento;
+    private javax.swing.JLabel parcelasClienteDetPagamento;
+    private javax.swing.JComboBox<String> selectParcelaDetPagamento;
+    private javax.swing.JLabel sobrenomeClienteDetPagamento;
+    private javax.swing.JTable tbPagamento;
+    private javax.swing.JLabel tipoServicoDetPagamento;
+    private javax.swing.JLabel vencimentoDetPagamento;
     // End of variables declaration//GEN-END:variables
 }
