@@ -1,12 +1,6 @@
-package View;/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+package View;
 
-/**
- *
- * @author Cecília
- */
+
 public class DetalhesPagamento extends javax.swing.JFrame {
 
     /**
@@ -131,6 +125,11 @@ public class DetalhesPagamento extends javax.swing.JFrame {
         jScrollPane1.setViewportView(tbPagamento);
 
         btnSalvarDetPagamento.setText("Salvar");
+        btnSalvarDetPagamento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalvarDetPagamentoActionPerformed(evt);
+            }
+        });
 
         btnVoltarDetPagamento.setText("Voltar");
 
@@ -262,6 +261,13 @@ public class DetalhesPagamento extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnSalvarDetPagamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvarDetPagamentoActionPerformed
+        // TODO add your handling code here:
+        int parcela = Integer.parseInt(selectParcelaDetPagamento.getSelectedItem().toString());
+        double valorPago = Double.parseDouble(campoValorPagoDetPagamento.getText());
+        String dataDoPagamento = campoDataPagamentoDetPagamento.getText();
+    }//GEN-LAST:event_btnSalvarDetPagamentoActionPerformed
 
     /**
      * @param args the command line arguments
