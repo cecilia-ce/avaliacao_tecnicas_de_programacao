@@ -22,8 +22,6 @@ public class ClienteDAO {
             statement.setString(6, cliente.getCep());
 
             statement.executeUpdate();
-
-
         }catch (SQLException e){
 
         }finally {
