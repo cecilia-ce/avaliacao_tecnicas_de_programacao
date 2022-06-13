@@ -260,7 +260,8 @@ public class CadastroCliente extends javax.swing.JFrame {
         double valorHonorarios = Double.parseDouble(campoValorHonorariosCadastroCliente.getText());
         int parcelas = Integer.parseInt(campoParcelasCadastroCliente.getText());
         int diaVencimento = Integer.parseInt(campoVencimentoCadastroCliente.getText());
-           
+        DetalhesCliente cadastrocliente = new DetalhesCliente();
+        cadastrocliente.setVisible(true);
     }//GEN-LAST:event_btnCadastrarActionPerformed
 
     /**

@@ -8,7 +8,7 @@ import View.DetalhesCliente;
 public class ClienteService {
 
 public void setNomeDetClient(String lblNome) {
-    lblMesa.setText(lblMesaInicial + pedido.getMesa());
+    nomeDetCliente.setText(nome);
     lblPrato.setText(lblPratoInicial + pedido.getPrato());
     lblQuantidade.setText(lblQuantidadeInicial + pedido.getQuantidade());
 }
