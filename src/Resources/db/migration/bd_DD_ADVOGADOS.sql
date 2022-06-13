@@ -2,9 +2,9 @@ CREATE TABLE DD_Advogados;
 
 CREATE TABLE usuario (
 codigo_usuario int PRIMARY KEY AUTO_INCREMENT,
-login VARCHAR NOT NULL,
-senha VARCHAR NOT NULL,
-nome VARCHAR NOT NULL
+login VARCHAR(90) NOT NULL,
+senha VARCHAR(20) NOT NULL,
+nome VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE cliente (
@@ -34,6 +34,10 @@ CREATE TABLE pagamento (
     codigo_pagamento INT PRIMARY KEY AUTO_INCREMENT, 
     codigo_caso INT NOT NULL, 
     valor_pago DOUBLE NOT NULL, 
-    data_pagamento DATE NOT NULL, 
+    data_pagamento VARCHAR(10) NOT NULL, 
     CONSTRAINT relacao_caso FOREIGN KEY(codigo_caso) REFERENCES caso(codigo_caso)
 );
+
+
+
+CONSTRAINT relacao_cliente FOREIGN KEY(codigo_cliente) REFERENCES cliente(codigo_cliente)

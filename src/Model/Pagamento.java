@@ -3,19 +3,22 @@ package Model;
 public class Pagamento {
 
     
+    
     private int codigo_pagamento;
     private int parcela;
     private double valor_pago;
     private int dia_vencimento;
     private double valor_honorario;
+    private int data_pagamento;
     //private Caso caso;
     
-    public Pagamento( int codigo_pagamento, int parcela, double valor_pago, int dia_vencimento, double valor_honorario){
+    public Pagamento( int codigo_pagamento, int parcela, double valor_pago, int dia_vencimento, double valor_honorario, int data_pagamento){
         this.codigo_pagamento = codigo_pagamento;
         this.parcela = parcela;
         this.valor_pago = valor_pago;
         this.dia_vencimento = dia_vencimento;
         this.valor_honorario = valor_honorario;
+        this.data_pagamento = data_pagamento;
     }
     
     
@@ -64,6 +67,15 @@ public class Pagamento {
     
     public void setValor_honorario(double valor_honorario) {
         this.valor_honorario = valor_honorario;
+    }
+    
+     public int getData_pagamento() {
+        return data_pagamento;
+    }
+
+   
+    public void setData_pagamento(int data_pagamento) {
+        this.data_pagamento = data_pagamento;
     }
     
     @Override

@@ -98,6 +98,11 @@ public class Login extends javax.swing.JFrame {
         });
 
         BtnEntrarLogin.setText("Entrar");
+        BtnEntrarLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnEntrarLoginActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -170,6 +175,12 @@ public class Login extends javax.swing.JFrame {
     private void inputSenhaLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inputSenhaLoginActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_inputSenhaLoginActionPerformed
+
+    private void BtnEntrarLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnEntrarLoginActionPerformed
+        // TODO add your handling code here:
+        String email = inputEmailLogin.getText();
+        String senha = inputSenhaLogin.getText();
+    }//GEN-LAST:event_BtnEntrarLoginActionPerformed
 
     /**
      * @param args the command line arguments
